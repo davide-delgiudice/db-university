@@ -7,6 +7,10 @@ WHERE YEAR(`date_of_birth`)= 1990
 
 -QUERY 2
 
+SELECT *
+FROM `courses`
+WHERE `cfu`> 10
+
 
 -QUERY 3
 
