@@ -37,6 +37,10 @@ AND `hour` > '14:00:00'
 
 -QUERY 6
 
+SELECT *
+FROM `degrees`
+WHERE `level` = 'magistrale'
+
 
 -QUERY 7
 
