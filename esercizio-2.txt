@@ -49,3 +49,7 @@ FROM `departments`
 
 
 -QUERY 8
+
+SELECT COUNT(*) AS `senza_telefono`
+FROM `teachers`
+WHERE `phone` IS NULL
