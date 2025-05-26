@@ -44,5 +44,8 @@ WHERE `level` = 'magistrale'
 
 -QUERY 7
 
+SELECT COUNT(*) AS `totale_dipartimenti`
+FROM `departments`
+
 
 -QUERY 8
