@@ -21,6 +21,11 @@ WHERE timestampdiff(YEAR, `date_of_birth`, CURDATE()) > 30
 
 -QUERY 4
 
+SELECT *
+FROM `courses`
+WHERE `period` = 'I semestre'
+AND `year` = 1
+
 
 -QUERY 5
 
