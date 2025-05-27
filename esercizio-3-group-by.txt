@@ -7,6 +7,8 @@ FROM `students`
 GROUP BY YEAR `iscritti_annuali`
 
 
+-QUERY 2
+
 // Contare gli Insegnanti che hanno l'ufficio nello stesso edificio
 
 SELECT COUNT(`id`) AS `numero_insegnanti`, `office_number`
@@ -14,4 +16,15 @@ FROM `teachers`
 GROUP BY `office_number`
 
 
+-QUERY 3
+
 // Calcolare la media dei voti di ogni appello d'esame
+
+SELECT ROUND(AVG(`vote`), 1) AS `media_voto`, `exam_id`
+FROM `exam_student`
+GROUP BY `exam_id`
+
+
+-QUERY 4
+
+// Contare quanti corsi di laurea ci sono per ogni dipartimento
