@@ -4,7 +4,7 @@
 
 SELECT COUNT(`enrolment_date`) AS `iscritti_annuali`, YEAR (`enrolment_date`) AS `anno`
 FROM `students`
-GROUP BY YEAR `iscritti_annuali`
+GROUP BY YEAR `iscritti_annuali`;
 
 
 -QUERY 2
@@ -13,7 +13,7 @@ GROUP BY YEAR `iscritti_annuali`
 
 SELECT COUNT(`id`) AS `numero_insegnanti`, `office_number`
 FROM `teachers`
-GROUP BY `office_number`
+GROUP BY `office_number`;
 
 
 -QUERY 3
@@ -22,7 +22,7 @@ GROUP BY `office_number`
 
 SELECT ROUND(AVG(`vote`), 1) AS `media_voto`, `exam_id`
 FROM `exam_student`
-GROUP BY `exam_id`
+GROUP BY `exam_id`;
 
 
 -QUERY 4
@@ -31,4 +31,4 @@ GROUP BY `exam_id`
 
 SELECT COUNT(*) AS `corsi_laurea`, `department_id`
 FROM `degrees`
-GROUP BY `department_id`
+GROUP BY `department_id`;
