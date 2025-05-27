@@ -4,8 +4,14 @@
 
 SELECT COUNT(`enrolment_date`) AS `iscritti_annuali`, YEAR (`enrolment_date`) AS `anno`
 FROM `students`
-GROUP BY YEAR (`enrolment_date`)
+GROUP BY YEAR `iscritti_annuali`
 
 
 // Contare gli Insegnanti che hanno l'ufficio nello stesso edificio
 
+SELECT COUNT(`id`) AS `numero_insegnanti`, `office_number`
+FROM `teachers`
+GROUP BY `office_number`
+
+
+// Calcolare la media dei voti di ogni appello d'esame
