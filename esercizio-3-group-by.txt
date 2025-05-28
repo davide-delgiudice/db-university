@@ -11,9 +11,9 @@ GROUP BY YEAR `iscritti_annuali`;
 
 // Contare gli Insegnanti che hanno l'ufficio nello stesso edificio
 
-SELECT COUNT(`id`) AS `numero_insegnanti`, `office_number`
+SELECT COUNT(`id`) AS `numero_insegnanti`, `office_address`
 FROM `teachers`
-GROUP BY `office_number`;
+GROUP BY `office_address`;
 
 
 -QUERY 3
